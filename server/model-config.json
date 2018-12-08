@@ -38,5 +38,9 @@
   "Configuration": {
     "dataSource": "db",
     "public": true
+  },
+  "Configurator": {
+    "dataSource": "db",
+    "public": true
   }
 }

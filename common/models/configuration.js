@@ -4,6 +4,7 @@ const crypto = require('crypto');
 
 module.exports = function(Configuration) {
   Configuration.beforeRemote('create', async (context, user, next) => {
+    context.args.data.configuratorId = context.req.accessToken.userId;
     context.args.data.date = Date.now();
     if (!context.args.data.hash) {
       context.args.data.hash = crypto

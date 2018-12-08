@@ -29,7 +29,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "configurator": {
+      "type": "belongsTo",
+      "model": "Configurator",
+      "foreignKey": "configuratorId"
+    }
+  },
   "acls": [
     {
       "accessType": "*",
