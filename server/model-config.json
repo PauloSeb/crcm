@@ -34,5 +34,9 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "Configuration": {
+    "dataSource": "db",
+    "public": true
   }
 }
